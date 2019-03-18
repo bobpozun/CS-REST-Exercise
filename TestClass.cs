@@ -24,13 +24,9 @@
             
             // Store token as a cookie
             var authToken = JsonConvert.DeserializeObject<JObject>(auth.Content)["token"].ToString();
+
             // Delete this line and start here. We've got the token isolated, store it as a cookie and continue to the next steps.
 
-            // Get booking 1, assert 200/OK response
-            
-            // Update booking 1 firstname to Robert, assert a 201/Created status code
-
-            // Get booking 1, assert firstname is Robert
         }
     }
 }
