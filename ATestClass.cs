@@ -20,7 +20,7 @@
             client = new RestClient(baseUrl);
             client.CookieContainer = new System.Net.CookieContainer();
         }
-        public IRestResponse SendRequest(string endpoint, Method method, string requestJson = null)
+        public IRestResponse SendRequest(string endpoint, Method method = Method.GET, string requestJson = null)
         {
             var request = new RestRequest(endpoint);
             request.AddHeader("Content-Type", "application/json");
